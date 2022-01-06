@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 // style
 import style from "../../styles/HeaderSection.module.css";
 // Components
@@ -8,7 +10,7 @@ import TitleText from "./TitleText";
 const HeaderSection = () => {
   return (
     <section className={style.container}>
-      <Headline />
+      <Headline motion={motion} />
       <TitleImage />
       <TitleText />
     </section>
