@@ -27,11 +27,11 @@
   position: absolute;
   width: 45vw;
   height: 65vw;
-  right: 0;
+  right: 32px;
 }
 
 .titleText {
-  padding-left: 25vw;
+  color: #07102e;
   text-align: right;
   font-size: 1.5rem;
 }
