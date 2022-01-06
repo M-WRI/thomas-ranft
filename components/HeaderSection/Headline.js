@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
+
 // style
 import style from "../../styles/HeaderSection.module.css";
 
-const Headline = ({ motion }) => {
+const Headline = () => {
   const headline = [
     { id: "1", title: "Portfolio" },
     { id: "2", title: "Thomas" },
@@ -16,6 +18,7 @@ const Headline = ({ motion }) => {
       transition: {
         delay: 0.2 + i * 0.2,
         duration: 0.5,
+        ease: "easeOut",
       },
     }),
   };

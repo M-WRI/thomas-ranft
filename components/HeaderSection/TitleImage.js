@@ -1,10 +1,34 @@
+import { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import Image from "next/image";
 
 import style from "../../styles/HeaderSection.module.css";
 
 const TitleImage = () => {
+  const { ref, inView } = useInView({
+    threshold: 1,
+  });
+
+  const animation = {
+    image: {
+      opacity: 1,
+      y: "0%",
+      transition: { bounce: 0, ease: "easeOut", duration: 0.5 },
+    },
+  };
+
+  const imgControl = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      imgControl.start("image");
+    }
+  }, [inView, imgControl]);
+
   return (
-    <div className={style.imageContainer}>
+    <div ref={ref} className={style.imageContainer}>
       <div className={style.imageWrapper}>
         <Image
           src="/images/thomas-michael-ranft-title-img.png"
@@ -18,3 +42,7 @@ const TitleImage = () => {
 };
 
 export default TitleImage;
+
+// initial={{ opacity: 0, y: "100%" }}
+// animate={imgControl}
+// variants={animation}

@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  margin-top: 35vw;
+  padding: 0 1rem;
+}
+
+.sectionHeadline {
+  color: #07102e;
+  display: block;
+  line-height: 0.8;
+  font-size: 10vw;
+  text-transform: uppercase;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.25vw solid #07102e;
+  margin-top: 2rem;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.imageContainer {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  overflow: hidden;
+}
+
+.categoryContainer {
+  width: 20vw;
+}
+
+.categoryHealine {
+  color: #07102e;
+  font-size: 5.5vw;
+  text-align: right;
+  font-weight: 300;
+  text-transform: uppercase;
+  word-break: break-all;
+}
