@@ -26,14 +26,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
   padding: 1rem 0 0.5rem 0;
 }
 
 .imageContainer {
   position: relative;
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
   overflow: hidden;
 }
 
@@ -41,11 +40,15 @@
   width: 20vw;
 }
 
-.categoryHealine {
+.categoryHeadline {
   color: #07102e;
   font-size: 5.5vw;
   text-align: right;
   font-weight: 300;
   text-transform: uppercase;
   word-break: break-all;
+}
+
+.overflow {
+  overflow: hidden;
 }
