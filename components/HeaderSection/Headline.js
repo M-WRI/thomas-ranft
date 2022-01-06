@@ -19,6 +19,7 @@ const Headline = ({ motion }) => {
       },
     }),
   };
+
   return (
     <div className={style.headlineContainer}>
       {headline.map((line, i) => (
