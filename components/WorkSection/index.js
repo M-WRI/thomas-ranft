@@ -10,7 +10,7 @@ const WorkSection = ({ data }) => {
   return (
     <section className={style.container}>
       <h2 className={style.sectionHeadline}>Werke</h2>
-      {data.works.map((data, i) => (
+      {data.map((data, i) => (
         <div key={i}>
           <WorkCategoryList type={data.artworkType} image={data.coverImage} />
         </div>
