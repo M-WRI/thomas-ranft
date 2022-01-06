@@ -8,7 +8,7 @@ import style from "../../styles/HeaderSection.module.css";
 
 const TitleImage = () => {
   const { ref, inView } = useInView({
-    threshold: 1,
+    threshold: 0.4,
   });
 
   const animation = {
@@ -29,14 +29,19 @@ const TitleImage = () => {
 
   return (
     <div ref={ref} className={style.imageContainer}>
-      <div className={style.imageWrapper}>
+      <motion.div
+        initial={{ y: "100%", opacity: 0 }}
+        animate={imgControl}
+        variants={animation}
+        className={style.imageWrapper}
+      >
         <Image
           src="/images/thomas-michael-ranft-title-img.png"
           alt="Thomas Ranft"
           layout="fill"
           objectFit="contain"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

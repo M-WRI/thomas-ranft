@@ -12,11 +12,20 @@
   text-transform: uppercase;
 }
 
-.card {
+/* ====== */
+/* Filter */
+/* ====== */
+
+.border {
+  width: 100%;
+  height: 0.25vw;
+  background: #07102e;
+}
+
+.cardContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 0.25vw solid #07102e;
   margin-top: 2rem;
   padding: 1rem 0 0.5rem 0;
 }
