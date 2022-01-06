@@ -1,0 +1,37 @@
+.headlineContainer {
+  color: #07102e;
+  margin-bottom: 3vw;
+}
+
+.headline {
+  display: block;
+  line-height: 0.8;
+  font-size: 12.5vw;
+  text-transform: uppercase;
+}
+
+.headlineContainer .headline:nth-child(2) {
+  margin-left: 12.5vw;
+}
+
+.headlineContainer .headline:nth-child(4) {
+  margin-left: 20vw;
+}
+
+.imageContainer {
+  height: 65vw;
+  margin-bottom: 3vw;
+}
+
+.imageWrapper {
+  position: absolute;
+  width: 45vw;
+  height: 65vw;
+  right: 0;
+}
+
+.titleText {
+  padding-left: 25vw;
+  text-align: right;
+  font-size: 1.5rem;
+}
