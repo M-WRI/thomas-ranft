@@ -40,6 +40,7 @@ const TitleImage = () => {
           alt="Thomas Ranft"
           layout="fill"
           objectFit="contain"
+          priority={true}
         />
       </motion.div>
     </div>

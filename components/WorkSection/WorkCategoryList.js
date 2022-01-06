@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -7,6 +7,8 @@ import { useInView } from "react-intersection-observer";
 import style from "../../styles/WorkSection.module.css";
 
 const WorkCategoryList = ({ type, image }) => {
+  const [active, setActive] = useState(false);
+
   const { ref, inView } = useInView({
     threshold: 0.4,
   });
@@ -53,6 +55,12 @@ const WorkCategoryList = ({ type, image }) => {
     }
   }, [inView, imageControl, borderControl]);
 
+  useEffect(() => {
+    if (inView) {
+      setActive(true);
+    }
+  }, [inView]);
+
   return (
     <>
       <div ref={ref}>
@@ -69,7 +77,7 @@ const WorkCategoryList = ({ type, image }) => {
             <h3 className={style.categoryHeadline}>
               {charLines.map((line, j) => (
                 <div key={j} className={style.overflow}>
-                  {inView && (
+                  {active && (
                     <motion.div
                       custom={j}
                       initial={{ y: "100%" }}

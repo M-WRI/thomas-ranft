@@ -7,7 +7,7 @@ import style from "../../styles/HeaderSection.module.css";
 
 const TitleText = () => {
   const { ref, inView } = useInView({
-    threshold: 0.8,
+    threshold: 1,
   });
 
   const animation = {
