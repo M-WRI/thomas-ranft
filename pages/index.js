@@ -5,6 +5,7 @@ import HeaderSection from "../components/HeaderSection";
 import WorkSection from "../components/WorkSection";
 import AwardSection from "../components/AwardSection";
 import Image from "next/image";
+import ExhibitionSection from "../components/ExhibitionSection";
 
 export default function Home({ data }) {
   const { works, awards, exhibitions } = data;
@@ -20,6 +21,7 @@ export default function Home({ data }) {
       <HeaderSection />
       <WorkSection data={works} />
       <AwardSection data={awards} />
+      <ExhibitionSection data={exhibitions} />
     </div>
   );
 }

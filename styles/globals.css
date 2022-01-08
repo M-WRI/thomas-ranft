@@ -1,3 +1,11 @@
+:root {
+  --main-bg-color: #e8e8e1;
+  --secondary-color: #07102e;
+  --primary-head-font-size: 12.5vw;
+  --scondary-head-font-size: 1.5rem;
+  --text-font-size: 1.5rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +16,7 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  background-color: var(--main-bg-color);
 }
 
 a {

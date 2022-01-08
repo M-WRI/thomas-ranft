@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  margin-top: 15vw;
+}
+
+.head {
+  flex: 1;
+  font-size: var(--scondary-head-font-size);
+  margin-right: 1vw;
+  text-transform: uppercase;
+}
+
+.contentContainer {
+  flex: 2;
+  justify-content: center;
+}
+
+.contentWrapper {
+  display: flex;
+  margin-bottom: 2vw;
+}
+
+.text {
+  flex: 1;
+  font-size: var(--scondary-head-font-size);
+  margin: 0 1vw;
+}
+
+.text:first-child {
+  text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .head {
+    margin-bottom: 5vw;
+  }
+}

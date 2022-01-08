@@ -1,5 +1,5 @@
 .headlineContainer {
-  color: #07102e;
+  color: var(--secondary-color);
   margin-bottom: 3vw;
 }
 
@@ -10,7 +10,7 @@
 .headline {
   display: block;
   line-height: 0.8;
-  font-size: 12.5vw;
+  font-size: var(--primary-head-font-size);
   text-transform: uppercase;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .titleText {
-  color: #07102e;
+  color: var(--secondary-color);
   text-align: right;
-  font-size: 1.5rem;
+  font-size: var(--text-font-size);
 }
