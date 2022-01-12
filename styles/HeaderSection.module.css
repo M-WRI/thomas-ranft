@@ -34,6 +34,7 @@
 .titleText {
   color: var(--secondary-color);
   text-align: right;
+  font-weight: 200;
   font-size: var(--text-font-size);
 }
 
