@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -6,6 +7,7 @@ function MyApp({ Component, pageProps }) {
       <main style={{ paddingLeft: "20vw", paddingRight: "32px" }}>
         <Component {...pageProps} />
       </main>
+      <Footer />
     </>
   );
 }

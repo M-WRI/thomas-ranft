@@ -25,9 +25,13 @@
   font-size: var(--scondary-head-font-size);
   margin: 0 1vw;
 }
+.text:last-child {
+  font-weight: 200;
+}
 
 .text:first-child {
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 @media (max-width: 960px) {
@@ -37,5 +41,16 @@
 
   .head {
     margin-bottom: 5vw;
+  }
+}
+
+@media (max-width: 680px) {
+  .contentWrapper {
+    flex-direction: column;
+    margin: 5vw 0;
+  }
+
+  .text {
+    margin: 0.5vw 0;
   }
 }
