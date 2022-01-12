@@ -1,6 +1,7 @@
 .headlineContainer {
   color: var(--secondary-color);
   margin-bottom: 3vw;
+  overflow: hidden;
 }
 
 .headlineWrapper {
@@ -38,4 +39,22 @@
   color: var(--secondary-color);
   text-align: right;
   font-size: var(--text-font-size);
+}
+
+@media (max-width: 768px) {
+  .headlineContainer {
+    position: relative;
+    left: 50%;
+    transform: translateX(-41%);
+  }
+
+  .imageWrapper {
+    right: unset;
+    left: 30%;
+  }
+
+  .titleText {
+    text-align: center;
+    padding: 0 1rem;
+  }
 }

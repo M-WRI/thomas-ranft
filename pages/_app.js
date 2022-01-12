@@ -1,10 +1,12 @@
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <main style={{ paddingLeft: "20vw", paddingRight: "32px" }}>
+      <Navbar />
+      <main>
         <Component {...pageProps} />
       </main>
       <Footer />

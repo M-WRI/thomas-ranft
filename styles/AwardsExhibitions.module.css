@@ -4,6 +4,7 @@
 }
 
 .head {
+  color: var(--secondary-color);
   flex: 1;
   font-size: var(--scondary-head-font-size);
   margin-right: 1vw;
@@ -24,6 +25,7 @@
   flex: 1;
   font-size: var(--scondary-head-font-size);
   margin: 0 1vw;
+  color: var(--secondary-color);
 }
 .text:last-child {
   font-weight: 200;
@@ -50,7 +52,11 @@
     margin: 5vw 0;
   }
 
+  .head {
+    text-align: center;
+  }
+
   .text {
-    margin: 0.5vw 0;
+    text-align: center;
   }
 }
