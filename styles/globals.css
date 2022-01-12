@@ -31,12 +31,9 @@ main {
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-
   main {
     padding-left: 5vw;
     padding-right: 5vw;
+    /* overflow: hidden; */
   }
 }

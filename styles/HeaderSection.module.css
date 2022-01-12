@@ -1,11 +1,7 @@
 .headlineContainer {
+  margin-top: 10vw;
   color: var(--secondary-color);
   margin-bottom: 3vw;
-  overflow: hidden;
-}
-
-.headlineWrapper {
-  overflow: hidden;
 }
 
 .headline {
@@ -48,6 +44,26 @@
     transform: translateX(-41%);
   }
 
+  .headline {
+    font-size: 16vw;
+  }
+
+  .headlineContainer .headlineWrapper:nth-child(1) {
+    margin-left: -12.5vw;
+  }
+
+  .headlineContainer .headlineWrapper:nth-child(2) {
+    margin-left: 8vw;
+  }
+
+  .headlineContainer .headlineWrapper:nth-child(3) {
+    margin-left: 0vw;
+  }
+
+  .headlineContainer .headlineWrapper:nth-child(4) {
+    margin-left: 20vw;
+  }
+
   .imageWrapper {
     right: unset;
     left: 30%;
@@ -56,5 +72,6 @@
   .titleText {
     text-align: center;
     padding: 0 1rem;
+    font-size: 1rem;
   }
 }
